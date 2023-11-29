@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/example.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./23sep_files/style.css">
+</head>
+<body>
+    <div>
+        <h1 style="color: blue;" class="first">Ajay Shaw</h1>
+        <h1 class="second">Akash Roy</h1>
+        <h1 class="third">Rajib das</h1>
+        <h1 class="fourth">Santosh Pradhan</h1>
+    </div>
+
+
+    &lt;--- first priority is inline color. ---&gt;
+
+    <p class="coding_journey">This is my first learning of coding journey.</p>
+    <p class="Santu_Debnath">Hi i am Santu Debnath. I am new to in this class.</p>
+    <p class="play_football">I love to play football</p>
+    <p class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente molestiae reprehenderit corrupti, reiciendis quasi sequi voluptas quas? Odit, sequi quas.</p>
+
+    <label style="color: white;" for="firstname">First Name:</label>
+    <input type="text" name="firstname" class="one" id="firstname" placeholder="Jonny">
+    <br>
+    <label style="color: white;" for="secondname">Second Name:</label>
+    <input type="text" name="secondname" class="two" id="secondname" placeholder="Roy">
+    <br>
+    <label style="color: white;" for="email">Email:</label>
+    <input type="text" name="email" class="email" id="email" placeholder="abcd@gmail.com">
+    <br>
+    <label style="color: white;" for="password">Password:</label>
+    <input type="number" name="password" class="password" id="password" placeholder="1234567890">
+    <br>
+    <label style="color: white;" for="confirmpassword">Confirm Password:</label>
+    <input type="number" name="confirmpassword" class="confirmpassword" id="confirmpassword" placeholder="1234567890">
+    <br> 
+    <label style="color: white;" for="gander">Gander:
+    <input type="radio" name="male" id="male" value="male" checked="">
+<label for="male">Male</label>
+<input type="radio" name="female" id="female" value="female">
+<label for="female">Female</label>
+<input type="radio" name="other" id="other" value="other">
+<label for="other">Other</label>
+</label>
+<br>
+<label style="color: white;" for="terms &amp; condition">Terms &amp; Condition:
+    <input type="checkbox" name="terms &amp; condition" id="terms &amp; condition" value="terms &amp; condition"> I agree for terms and condition
+</label>
+<br>
+<button style="color: steelblue;">Register</button>
+<br>
+<br>
+<p style="color: white;">Created by Santu Debnath © 2023</p>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
