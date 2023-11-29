@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+}
+.first{
+    color: red;
+}
+.second{
+    color: green;
+}
+.third{
+    color: navy;
+}
+.fourth{
+    color: brown;
+}
+
+
+.coding_journey{
+    color: aqua;
+}
+.Santu_Debnath{
+    color: yellowgreen;
+}
+.play_football{
+    color: teal;
+}
+.lorem{
+    color: navajowhite;
+}
+.one{
+    background-color: green;
+}
+.two{
+    background-color: greenyellow;
+}
+.email{
+    background-color: blueviolet;
+}
+.password{
+    background-color: chocolate;
+}
+.confirmpassword{
+    background-color: crimson;
+}
