@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://127.0.0.1:5500/7thoct/8thoct/assignment3.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header{
+            background-color: antiquewhite;
+            text-align: center;
+            padding: 20px;
+            color: blue;
+        }
+        .Footer{
+            background-color: antiquewhite;
+            text-align: center;
+            padding: 20px;
+            color: blue;
+        }
+        .second{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .sidebar, .main{
+            background-color: green;
+            padding: 20px;
+            text-align: center;
+            color: wheat;
+        }
+        .main{
+            background-color: chocolate;
+            color: wheat;
+        }
+        @media (min-width: 768px) {
+            .container{
+                flex-direction: row;
+            }
+            .sidebar, .main{
+                flex: 1;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Box1</div>
+        <div class="second">
+        <div class="sidebar">Box2</div>
+        <div class="main">Box3</div>
+        </div>
+        <div class="Footer">Box4</div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
