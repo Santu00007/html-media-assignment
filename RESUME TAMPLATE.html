@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://127.0.0.1:5500/22thoct/Mypractice/example.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .resume{
+            display: grid;
+            grid-template-columns: 300px auto;
+            max-width: 800px;
+            height: 1080px;
+            margin: auto;
+            box-shadow: 0px 0px 3px 1px lightgray;
+            padding: 20px;
+            column-gap: 50px;
+            border: 2px solid gray;
+        }
+        .left{
+            background-color: #5271ff;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+       .my-photo{
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+            overflow: hidden;
+       }
+       .name{
+        color: white;
+       }
+       .icon{
+        height: 15px;
+        width: 15px;
+       }
+       .bottom{
+           background-color: #3c4240;
+           color: white;
+           margin-top: 350px;
+           width: 220px;
+           padding-left: 40px;
+           padding-right: 40px;
+           padding-top: 20px;
+           padding-bottom: 20;
+           position: absolute;
+       }
+       .links {
+            display: flex;
+            gap: 20px;
+        }
+        .links a {
+            text-decoration: none;
+        }
+        .github,
+        .linkedin {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: white;
+        }
+        .certificate-heading,
+        .skills-heading,
+        .contact-heading {
+           display: flex;
+           gap: 8px;
+        }
+        .skill-progress {
+           height: 10px;
+        }
+        .item{
+            color: gray;
+        }
+        .line1 {
+            height: 2px;
+            background: white;
+        }
+        .certificate,
+        .skills,
+        .contact {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .details {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            padding-right: 20px;
+        }
+        .experience-heading,
+        .project-heading,
+        .education-heading {
+            color: #5271ff;
+        }
+        .role-date {
+            display: flex;
+            justify-content: space-between;
+        }
+        .role{
+            display: flex;
+            gap: 24px;
+        }
+        .line2{
+            height: 2px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <main class="resume">
+        <section class="left">
+            <div>
+                <img class="my-photo" src="./RESUME TAMPLATE_files/unnamed.jpg" alt="">
+            </div>
+            <h1 class="name">Santu Debnath</h1>
+            <div class="links">
+                <a class="github" href="http://127.0.0.1:5500/22thoct/Mypractice/github"><img class="icon" src="./RESUME TAMPLATE_files/25231.png" alt="">Github</a>
+                <a class="linkedin" href="http://127.0.0.1:5500/22thoct/Mypractice/linkedin"><img class="icon" src="./RESUME TAMPLATE_files/723151.png" alt="">Linkedin</a>
+            </div>
+        </section>
+        <div class="bottom">
+            <section class="contact">
+                <div class="contact-detail">
+                    <h2>Contact</h2>
+                </div>
+                <div class="line1"></div>
+                <ul class="contact-lis">
+                    <li>Phone</li>
+                    <span class="item">7001162456</span>
+                    <li>Email</li>
+                    <span class="item">santudebnath41@gmail.com</span>
+                </ul>
+            </section>
+            <section class="skills">
+                <div class="skill-detail">
+                    <h2>Skills</h2>
+                    <div class="line1"></div>
+                </div>
+                <div class="line1"></div>
+                <ul class="skill-list">
+                    <li>Autocad</li>
+                    <progress class="skill-progress" max="100" value="75"></progress>
+                    <li>HTML</li>
+                    <progress class="skill-progress" max="100" value="80"></progress>
+                    <li>CSS</li>
+                    <progress class="skill-progress" max="100" value="70"></progress>
+                    <li>Construction Skill</li>
+                    <progress class="skill-progress" max="100" value="90"></progress>
+                </ul>
+            </section>
+            <section class="certificate">
+                <div class="certificate-detail">
+                    <h2>Ceritficates</h2>
+                    <div class="line1"></div>
+                </div>
+                    <ul>
+                        <li>1. Autocad</li>
+                        <li>2. Diploma in Civil Engineering</li>
+                        <li>3. ITI in Draughtsman Civil</li>
+                    </ul>
+            </section>
+        </div>
+        <div class="detail">
+            <section class="work-experience">
+                <h2 class="experience-heading">Work Experience</h2>
+             <div class="line2"></div>
+             <ul class="experience-list">
+                <li>
+                    <div class="role-date">
+                        <div class="role">
+                          <h3>Construction Supervisor</h3>
+                        </div>
+                        <h3>Jan,2019 - Aug,2019</h3>
+                        <h3>Dec,2020 - June,2021</h3>
+                        <h3>Dec,2020 - June,2021</h3>
+                    </div>
+                    <h3>L &amp; T Construction</h3>
+                    <p> The next part of your construction supervisor job description should highlight the specific job responsibilities. As mentioned before, guaranteeing safety on the construction site is the main priority, so remember to include this aspect prominently in your list of responsibilities.</p>
+                </li>
+                <li>
+                    <div class="role-date">
+                        <div class="role">
+                          <h3>Team Leader</h3>
+                        </div>
+                        <h3>March,2023 - Till Now</h3>
+                    </div>
+                    <h3>Global Kitchen</h3>
+                    <p>To support, lead and motivate the team of associates to meet sales, profit and compliance targets by achieving the following on a day-to-day basis; excellent customer service. welcoming guests into the hotel and fulfilling any reasonable requests to ensure their satisfaction, comfort and safety.</p>
+                </li>
+             </ul>
+            </section>
+            <section class="project">
+                <h2 class="project-heading">Project</h2>
+             <div class="line2"></div>
+               <ul class="project-list">
+                 <li>
+                    <div class="role-date">
+                        <div class="role">
+                          <h3>Resume Tamplate</h3>
+                        </div>
+                    </div>
+                    <h2>TECH STACK</h2>
+                 </li>
+               </ul>
+            </section>
+            <section class="education">
+                <h2 class="education-heading">Education</h2>
+             <div class="line2"></div>
+             <ul class="education-list">
+                <li>
+                    <div class="role-date">
+                        <div class="role">
+                          <h3>Higher Secondary</h3>
+                        </div>
+                        <h3>2005 TO 2013</h3>
+                    </div>
+                    <div class="collage-name">Taherpur Netaji High School</div>
+                </li>
+                <li>
+                    <div class="role-date">
+                        <div class="role">
+                          <h3>I.T.I. IN Draughtsman Civil</h3>
+                        </div>
+                        <h3>2014 TO 2016</h3>
+                    </div>
+                    <div class="collage-name">Bipradas Paul Choudhury Industrial Training Institue</div>
+                </li>
+                <li>
+                    <div class="role-date">
+                        <div class="role">
+                          <h3>Diploma In Civil Engineering</h3>
+                        </div>
+                        <h3>2018 TO 2021</h3>
+                    </div>
+                    <div class="collage-name">Sangai International Institute</div>
+                </li>
+             </ul>
+            </section>    
+        </div>
+    </main>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
