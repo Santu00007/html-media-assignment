@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://127.0.0.1:5500/My%20Projects/webpageclone.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+              background-image: url("./Assets/background-image.png");
+              background-position: bottom;
+              height: 100vh;
+              background-repeat: no-repeat;
+              max-width: 1440px;
+              margin: auto
+         }
+        .idpc{
+            margin-top: 40px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0px;
+            height: 10vh;
+        }
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .button{
+            height: 20px;
+        }
+        .nav-button{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            align-items: center;
+            font-weight: bold;
+        }
+        .nav-button > button{
+            background-color: deeppink;
+            border: 1px solid pink;
+            border-radius: 5px;
+            padding: 5px 5px;
+            color: white;
+        }
+        .main-left{
+            width: 40%;
+            position: relative;
+        }
+        .heading{
+            font-size: 60px;
+        }
+        .paragraph{
+            font-size: x-large;
+        }
+        .apply{
+            background-color: deeppink;
+            padding: 5px;
+            color: white;
+            border-radius: 5px;
+        }
+        .loan{
+            color: deeppink;
+            border: 1px solid deeppink;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .telephone{
+            height: 10px;
+        }
+        .contact{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            padding: 20px;
+            gap: 10px;
+        }
+        .contact-one{
+            display: flex;
+            align-items: center;
+        }
+        .contact-two{
+            height: 20px;
+            width: 3px;
+            background-color: black;
+        }
+        .facebook,
+        .youtube,
+        .instagram,
+        .linkedin{
+            height: 20px;
+        }
+        .contact-three ul{
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            gap: 20px;
+        }
+        .car-loan img{
+            height: 30px;
+        }
+        .main-right{
+            position: relative;
+            width: 60%;
+        }
+        .car-loan{
+            display: flex;
+            position: absolute;
+            border: 1px solid gray;
+            box-shadow: 2px 2px 20px gray;
+            border-radius: 10px;
+            width: 100px;
+            align-items: center;
+            padding: 10px;
+            background-color: white;
+            justify-content: space-between;
+        }
+        .home-loan img{
+            height: 30px;
+        }
+        .home-loan {
+            position: absolute;
+            border: 1px solid red;
+            display: flex;
+            align-items: center;
+            width: 125px;
+            justify-content: space-between;
+            padding: 10px 15px;
+            border-radius: 30px;
+            right: 10%;
+            top: 25%;
+            background-color: #ffffff;
+            border: none;
+            box-shadow: 10px 10px 50px grey;
+        }
+        .hero-image img{
+            width: 600px;
+        }
+        @media screen and (max-width: 768px) {
+            body {
+               background-position: center;
+            }
+            main {
+               padding-top: 10%;
+               flex-direction: column-reverse;
+               gap: 10px;
+               margin: 0 10%;
+    
+            }
+            .main-hero-right {
+               width: 100%
+            }
+            .main-hero-left {
+               width: 100%;
+               text-align: center;
+      
+            }
+            .contact {
+      
+               width: 100%;
+               justify-content: center;    
+            }
+    
+            .car-loans {
+                top: 0;
+                left: 5%;
+            }
+            .home-loans {
+                right: 0;
+            }
+            .nav-menu {
+                display: none;
+       
+            } 
+        }
+
+        @media screen and (max-width: 425px) {
+
+           .car-loans {
+                left: -10px;
+                width: 95px;
+            }
+            .home-loans {
+                width: 110px;
+                right: -25px;
+            }
+   
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="data:image/png;base64,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" alt="idpc" class="idpc">
+            </div>
+            <div class="linkes">
+              <ul>
+                <li>
+                    <a href="http://127.0.0.1:5500/My%20Projects/webpageclone.html#">RETAIL</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/My%20Projects/webpageclone.html#">SME</a>
+                </li>
+                <li><a href="http://127.0.0.1:5500/My%20Projects/webpageclone.html#">CORPORATE</a></li>
+                <li><a href="http://127.0.0.1:5500/My%20Projects/webpageclone.html#">ABOUT US</a></li>
+                <li><a href="http://127.0.0.1:5500/My%20Projects/webpageclone.html">COVID 19</a></li>
+                <li><a href="http://127.0.0.1:5500/My%20Projects/webpageclone.html#">CAMPAIGNS</a></li>
+              </ul>
+            </div>
+            <div class="nav-button">
+                <img class="button" src="./webpage clone_files/search-flat-pink-color-icon-vector-6080806.jpg" alt="search-icon">
+                <button>iService</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="main-left">
+            <h1 class="heading">Choose Your Dream With Us</h1>
+            <p class="paragraph">The header you work from something, the greater you will feel when you achieve it.</p>
+            <div class="button2">
+                <button class="apply">APPLY ONLINE</button>
+                <button class="loan">LOAN CALCULATOR</button>
+            </div>
+            <div class="contact">
+               <div class="conatct-one">
+                  <img src="./webpage clone_files/pngtree-phone-flat-pink-color-icon-telephone-speaking-communicate-vector-png-image_19940384.png" alt="telephone" class="telephone">
+                  <span>1659</span>
+                </div>
+                <div class="contact-two"></div>
+                <div class="contact-three">
+                    <ul>
+                        <li><img src="./webpage clone_files/images" alt="facebook" class="facebook"></li>
+                        <li><img class="youtube" src="./webpage clone_files/1384060.png" alt="youtebe"></li>
+                        <li><img class="linkedin" src="./webpage clone_files/linkedin-logo-linkedin-icon-transparent-free-png.png" alt="linkedin"></li>
+                        <li><img class="instagram" src="./webpage clone_files/Instagram_icon.png" alt="instagram"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="main-right">
+            <div>
+               <div class="car-loan">
+                  <img src="./webpage clone_files/5566885.png" alt="">
+                  <span>Car Loan</span>
+               </div>
+               <div class="home-loan">
+                   <img src="./webpage clone_files/pngtree-mortgage-icon-in-trendy-style-isolated-background-png-image_1527216.jpg" alt="">
+                    <span>Home Loan</span>
+               </div>
+               <div class="hero-image">
+                 <img src="./webpage clone_files/17213688-portrait-of-happy-couple-with-two-children-of-white-background.jpg" alt="">
+               </div>
+            </div>
+        </section>
+    </main>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
