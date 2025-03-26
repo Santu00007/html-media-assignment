@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/17sep.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Improved Multimedia support - HTML5 allows for the integration of multimedia elements such as audio and
+    video directly into web pages without the need for plugins like Flash. </h1>
+    
+  <h1> Canvas element - HTML5 introduced the <canvas> element, which allows for dynamic, interactive graphics to
+    be created and manipulated within a web page.</canvas></h1> 
+    
+   <h1>Geolocation API - HTML5 provides an API for obtaining the user's location, enabling web applications to offer
+    location-based services.</h1> 
+    
+ <h1>  Local Storage - HTML5 introduced the localStorage API, which allows for the storage of data on the user's
+    device, improving performance and reducing the need for round-trips to the server.</h1> 
+    
+   <h1> New Structural Elements - HTML5 introduced new semantic elements such as <header>, <footer>, <nav>, and
+    <article> that makes it easier to structure and organize content on a web page.</article></nav></footer></header></h1>
+    
+   <h1> Form Improvements - HTML5 introduced several improvements to forms, including new input types like date,
+    time, and color, as well as new attributes such as required and autofocus.</h1>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

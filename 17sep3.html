@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/17sep2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    HTML Entities:
+HTML entities are special codes that represent reserved characters, symbols, or characters with specific
+meanings in HTML. They are used to display characters that might otherwise be interpreted as HTML code or
+cause rendering issues in web browsers. HTML entities are written using an ampersand (&amp;) followed by a
+specific code or name, and ending with a semicolon (;).
+5 Commonly Used HTML Entities:
+&lt; - Represents the less-than symbol &lt;.
+Example: <p>This is an example &lt;em&gt;text&lt;/em&gt;.</p>
+&gt; - Represents the greater-than symbol &gt;.
+Example: <p>For more information, visit our website &gt; <a href="http://127.0.0.1:5500/17sep2.html#">here</a>.</p>
+&amp; - Represents the ampersand symbol &amp;.
+Example: <p>For further details, contact us &amp; we'll assist you.</p>
+" - Represents a double quotation mark "
+Example: <p>The title of the book is "The Great Gatsby".</p>
+© - Represents the copyright symbol ©.
+Example: <p>© 2023 ACME Corporation. All rights reserved.</p>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5500/17thsep10.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML v/s HTML5</h1>
+
+Assignment Solution
+
+Full Stack Web Development
+
+<table border="1">
+<thead>
+<tr>
+<th>HTML</th>
+<th>HTML5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+It required plugins like Adobe Flash to support audio and video
+content.
+</td>
+<td>
+Provides built-in support for multimedia elements such as video and
+audio without the need for a plugin.
+</td>
+</tr>
+<tr>
+<td>It has fewer elements as compared to HTML5.</td>
+<td>
+It includes new elements and form attributes such as time, date, and
+colour. Required and autofocus in input types of the tag element as
+well.
+</td>
+</tr>
+<tr>
+<td>It does not have support for local storage.</td>
+<td>It has support for local storage i.e. localStorage.</td>
+</tr><tr>
+<td>
+Less semantic elements, thereby providing less web accessibility
+features.
+</td>
+<td>
+<p>
+It supports more semantic elements, such as &lt;header&gt;,
+&lt;footer&gt;, &lt;nav&gt;, and &lt;article&gt;, thereby
+improving accessibility.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
